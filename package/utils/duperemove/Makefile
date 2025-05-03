@@ -30,16 +30,14 @@ define Package/duperemove
 	TITLE:=Duplicate file removal tool
 	URL:=https://github.com/markfasheh/duperemove
 	DEPENDS:= \
+		+libsqlite3 \
 		+glib2 \
-		+libatomic \
+		+libxxhash \
+		+libuuid \
+		+libmount \
 		+libblkid \
 		+libbsd \
-		+libmount \
-		+libsqlite3 \
-		+libuuid \
-		+libxxhash \
-		+pkg-config \
-		+util-linux
+		+libatomic
 endef
 
 define Package/duperemove/description
